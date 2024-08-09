@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(25, 114, 114);
+}
+header{
+    width: 100%;
+    background-image: url(../images/games.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+li{
+    width: 30%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+  transition-delay: 0s, 1s;
+
+}
+li:hover{
+    color: aquamarine;
+    background: tan;
+    background: #ff7b29;
+    border-radius: 50%;
+}
+a{
+    color: rgb(61, 100, 60);
+    text-decoration: none;
+    text-shadow: 3px;
+    border-top: 1px solid;
+    border-right: 6px solid;
+    border-bottom: 8px solid;
+    border-left: 1px solid;
+    padding: 12px;
+    transition-property: color, background, width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+}
+a:hover{
+    color: brown;
+    background: yellowgreen;
+    width: 100px;
+}
+.offpage{
+    position: absolute;
+    left: -1000px;
+}
+.offpage:focus{
+    position: absolute;
+    left: 0px;
+}
+.my{
+    background-color: #4b4b91;
+padding: 15px;
+margin: 15px;
+    position: relative;
+
+}
+.my h2{
+    text-align: center;
+ 
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.my h2:hover{
+    font-size: xx-large;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+img{
+    width: 220px;
+    height: 288px;
+    border-radius: 15%;
+}
+.card-container {
+    cursor: pointer;
+    perspective: 600;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
+  }
+  .card {
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .card .back {
+    background: #4b4b91;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    margin-bottom: 60px;
+
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .flex img:nth-child(odd){
+    background-color: #4b4b91;
+    border-radius: 35% !important;
+  }
+  .flex img{
+    margin: 20px;
+    transition-property: width, height, border;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+  }
+  .flex img:hover{
+    border: 6px solid wheat;
+    width: 320px;
+    height: 388px;
+  }
+  .main-img{
+    width: 267px;
+    height: 189px;
+    transition: width 2s linear;
+}
+.main-img:hover{
+    width: 100%;
+}
+footer{
+    background-color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+}
